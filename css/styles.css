@@ -133,34 +133,24 @@ nav li .phone {
 /* Tablet */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px)
- {
-    .header {
-      height: 200px;
-      justify-content: flex-end;
-    }
-  
-    .main-header,
-    .nav {
-      display: flex;
-      flex-direction: row;
-    }
-    .nav {
-      margin-top: 3em;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .nav a {
-      border-bottom-color: transparent;
-    }
+and (max-device-width : 1024px){
+  /* HEADER STYLING */
+  .main-nav li {
+    float: left;
   }
 
+  .main-header nav{
+    
+  }
+
+  /* PORTFOLIO STYLING */
   .portfolio-wrapper {
-    display: inline-block;
+    display: block;
   }
 
   .portfolio-wrapper div {
-    width: 50%;
+    display: inline-block;
+    width: 46.5%;
   }
   
 }
