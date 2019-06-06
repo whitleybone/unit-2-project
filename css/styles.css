@@ -24,12 +24,12 @@ ul {
 
 li {
   width: 100%;
-  margin: auto;
+  
 }
 
 .main-nav {
   width: 100%;
-  margin: auto;
+  
 }
 
 
@@ -135,13 +135,15 @@ nav li .phone {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px){
   /* HEADER STYLING */
-  .main-nav li {
-    float: left;
-  }
+.main-header {
+  display: block;
+}
 
-  .main-header nav{
-    
-  }
+.main-header li {
+  display: inline-block;
+}
+
+ 
 
   /* PORTFOLIO STYLING */
   .portfolio-wrapper {
@@ -158,3 +160,12 @@ and (max-device-width : 1024px){
 /* Desktop */
 @media (min-width: 1024px) { 
 }
+  /* PORTFOLIO STYLING */
+  .portfolio-wrapper {
+    display: block;
+  }
+
+  .portfolio-wrapper div {
+    display: inline-block;
+    width: 33%%;
+  }
