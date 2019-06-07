@@ -244,13 +244,17 @@ footer, #contact {
       display: none;
     }
 
-      .footer-nav {
-        display: block;
-      }
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-      .footer-nav a {
-        display: block;
-      }
+    .footer-nav ul {
+      display: flex;
+      
+    }
+
   }
 
 
