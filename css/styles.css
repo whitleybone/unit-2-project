@@ -20,6 +20,8 @@ p {
   text-align: center;
 }
 
+
+
 /* ==========================
   HEADER STYLING
   ========================== */
@@ -79,12 +81,11 @@ li {
   align-self: center;
 }
 
-/* =========================
-  INTRO STYLING
-  =========================== */
-.intro {
-  display: flex;
-  flex-direction: column;
+.self-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
@@ -153,6 +154,10 @@ footer, #contact {
   padding-right: 2%;
 }
 
+.footer-nav{
+  display: none;
+}
+
 /* ========================
     MEDIA QUERIES
 ======================= */
@@ -166,6 +171,8 @@ footer, #contact {
   }
   h1 {
     text-align: center;
+    font-size: 4em;
+    margin: .4em;
   }
 
   h2{
@@ -183,24 +190,23 @@ footer, #contact {
    .nav a {
      background-color: transparent;
    }
-
-   .intro {
-     float: left;
-   }
   
 /* =========================
   INTRO STYLING
   =========================== */
   .intro{
-    padding: 2; 
+    padding: 2em; 
   }
 
-  .introP{
+  .intro P{
     text-align: left;
   }
 
   .self-photo{
-    float: right;
+    float: left;
+    width: 35%;
+    height: auto;
+    margin-right: 2em;
   }
 
   
@@ -235,6 +241,20 @@ footer, #contact {
    
 
     /* FOOTER STYLING */
+    .footer-nav {
+      display: block;
+    }
+
+    .footer-nav a{
+      display: inline-block;
+      padding: .3em;
+
+    }
+
+    .top {
+      display: none;
+    }
+ 
   
 
 
@@ -248,13 +268,24 @@ footer, #contact {
 
 /* Desktop */
 @media (min-width: 1024px) { 
+
+  header {
+    margin: 0;
+  }
   h1 {
     text-align: center;
+    font-size: 4em;
+    margin: .4em;
+  }
+
+  h2{
+    margin: auto;
   }
 
   .nav {
     display: flex;
    flex-direction: row;
+    align-items: center;
     margin-left: 0em;
     padding: 0em;
    }
@@ -262,11 +293,23 @@ footer, #contact {
    .nav a {
      background-color: transparent;
    }
-
-   .self-image {
-     display: inline-block;
-   }
   
+/* =========================
+  INTRO STYLING
+  =========================== */
+  .intro{
+    padding: 2em; 
+  }
+
+  .intro P{
+    text-align: right;
+  }
+
+  .self-photo{
+    float: left;
+    width: 30%;
+    height: auto;
+  }
    
   
     /* PORTFOLIO STYLING */
@@ -289,3 +332,6 @@ footer, #contact {
     }
   }
 
+  .top {
+    display: none;
+  }
