@@ -154,9 +154,12 @@ footer, #contact {
   padding-right: 2%;
 }
 
-.footer-nav{
+.footer-nav {
   display: none;
 }
+
+
+
 
 /* ========================
     MEDIA QUERIES
@@ -225,8 +228,6 @@ footer, #contact {
       font-size: 17.49px;
     }
 
-   
-  }
     /* CONTACT STYLING */
 
     h2 {
@@ -238,27 +239,19 @@ footer, #contact {
       align-items: center;
     }
 
-   
-
     /* FOOTER STYLING */
-    .footer-nav {
-      display: block;
-    }
-
-    .footer-nav a{
-      display: inline-block;
-      padding: .3em;
-
-    }
-
     .top {
       display: none;
     }
- 
-  
 
+      .footer-nav {
+        display: block;
+      }
 
-}
+      .footer-nav a {
+        display: block;
+      }
+  }
 
 
 
@@ -330,8 +323,14 @@ footer, #contact {
     .photo-gallery p {
       font-size: 16px;
     }
+
+    /* PORTFOLIO STYLING */
+
+    .top {
+      display: none;
+    }
+
+    
   }
 
-  .top {
-    display: none;
-  }
+  
