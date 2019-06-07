@@ -9,7 +9,7 @@ body{
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: darkcyan;
 }
 
 a:hover {
@@ -18,12 +18,6 @@ a:hover {
 
 p {
   text-align: center;
-}
-
-h1 {
-  font-size: 3em;
-  margin: .3em;
-  font-weight: bolder;
 }
 
 /* ==========================
@@ -85,7 +79,13 @@ li {
   align-self: center;
 }
 
-
+/* =========================
+  INTRO STYLING
+  =========================== */
+.intro {
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* =========================
@@ -188,7 +188,21 @@ footer, #contact {
      float: left;
    }
   
-   
+/* =========================
+  INTRO STYLING
+  =========================== */
+  .intro{
+    padding: 2; 
+  }
+
+  .introP{
+    text-align: left;
+  }
+
+  .self-photo{
+    float: right;
+  }
+
   
     /* PORTFOLIO STYLING */
     .portfolio-wrapper {
