@@ -174,7 +174,6 @@ footer, #contact {
   h1 {
     text-align: center;
     font-size: 4em;
-    margin: .4em;
   }
 
   h2{
@@ -273,21 +272,36 @@ footer, #contact {
     margin: 0;
   }
   h1 {
-    text-align: center;
-    font-size: 4em;
-    margin: .4em;
+    text-align: left;
+    font-size: 2.5em;
+    width: 50%;
+    margin-left: 10%;
   }
 
   h2{
     margin: auto;
   }
 
+  .name-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .name-nav h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: 
+  }
+
   .nav {
     display: flex;
    flex-direction: row;
-    align-items: center;
-    margin-left: 0em;
-    padding: 0em;
+   justify-content: space-around;
+   margin-left: 20%;
+   padding-top: 1em;
+    
    }
 
    .nav a {
@@ -302,14 +316,15 @@ footer, #contact {
   }
 
   .intro P{
-    text-align: justify;
-    padding-right: 20em;
+    text-align: left;
+    padding-right: 15em;
     padding-left: 1em;
+    font-size: 30px;
   }
 
   .self-photo{
     float: right;
-    width: 30%;
+    width: 40%;
     height: auto;
   }
    
