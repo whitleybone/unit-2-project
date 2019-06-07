@@ -20,6 +20,12 @@ p {
   text-align: center;
 }
 
+h1 {
+  font-size: 3em;
+  margin: .3em;
+  font-weight: bolder;
+}
+
 /* ==========================
   HEADER STYLING
   ========================== */
