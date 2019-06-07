@@ -202,14 +202,15 @@ footer, #contact {
   }
 
   .intro P{
-    text-align: left;
+    text-align: justify;
+    padding-right: 15.5em;
   }
 
   .self-photo{
-    float: left;
+    float: right;
     width: 35%;
     height: auto;
-    margin-right: 2em;
+    margin-right: 0em;
   }
 
   
@@ -252,7 +253,10 @@ footer, #contact {
 
     .footer-nav ul {
       display: flex;
-      
+    }
+
+    .footer-nav a {
+      padding: .2em;
     }
 
   }
@@ -299,11 +303,13 @@ footer, #contact {
   }
 
   .intro P{
-    text-align: right;
+    text-align: justify;
+    padding-right: 20em;
+    padding-left: 1em;
   }
 
   .self-photo{
-    float: left;
+    float: right;
     width: 30%;
     height: auto;
   }
