@@ -3,8 +3,10 @@
   ========================== */
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #f8f8f8; 
+  background: white; 
 }
+
+
 
 p {
   text-align: center;
@@ -15,7 +17,13 @@ p {
   ========================== */
 
 header {
-  padding-top: 2em;
+  background: #F8F8F8;
+  margin: 0;
+}
+
+header p {
+  text-align: center;
+  padding-bottom: 
 }
 
 ul {
@@ -37,7 +45,6 @@ li {
 .self-photo {
  border: transparent;
  border-radius: 50%;
- padding-top: 1em;
 }
 
 .main-nav a {
@@ -47,12 +54,12 @@ li {
   color: #797e83;
   font-size: 1.125em;
   background-color: white;
-  margin-top: .5em;
+  margin: .2em;
 }
 
 .nav a:hover {
-  color: #0b0b0b;
-  border-bottom-color: #52bab3;
+  color: #52bab3;
+  
 }
 
 .main-header,
@@ -78,10 +85,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #E0F0FA ;
+  margin: 0;
   
 }
 .portfolio-wrapper h2{
   text-align: center;
+  PADDING-TOP: 1em;
 }
 .portfolio-wrapper h3 {
   text-align: center;
@@ -98,19 +108,21 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
+  padding: 0%;
 }
 
-.contact-wrapper li {
-  display: block;
-  text-align: center;
+.nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-wrapper h2 {
   text-align: center;
 }
-nav li .phone {
-  color: aquamarine;
+
+.color-text {
+  color: blueviolet;
 }
 
 
@@ -119,11 +131,16 @@ nav li .phone {
    /* ========================
     FOOTER STYLING
     ======================= */
+footer, #contact {
+  background: #F8F8F8;
+}
 .footer-wrapper{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /* ========================
@@ -131,41 +148,88 @@ nav li .phone {
 ======================= */
 
 /* Tablet */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px){
+@media (min-width: 768px) {
   /* HEADER STYLING */
-.main-header {
-  display: block;
-}
-
-.main-header li {
-  display: inline-block;
-}
-
- 
-
-  /* PORTFOLIO STYLING */
-  .portfolio-wrapper {
-    display: block;
+  h1 {
+    text-align: center;
   }
 
-  .portfolio-wrapper div {
-    display: inline-block;
-    width: 46.5%;
-  }
+  .nav {
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    margin-left: 0em;
+    padding: 0em;
+   }
+
+   .nav a {
+     background-color: transparent;
+   }
   
+   
+  
+    /* PORTFOLIO STYLING */
+    .portfolio-wrapper {
+      display: block;
+    }
+  
+    .portfolio-wrapper div {
+      display: inline-block;
+      width: 46.5%;
+      padding: 1.5%;
+    }
+
+    /* CONTACT STYLING */
+    .contact-nav li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* FOOTER STYLING */
+  
+
+
 }
+
+
+
+
+
+
 
 /* Desktop */
 @media (min-width: 1024px) { 
-}
-  /* PORTFOLIO STYLING */
-  .portfolio-wrapper {
-    display: block;
+  h1 {
+    text-align: center;
   }
 
-  .portfolio-wrapper div {
-    display: inline-block;
-    width: 33%%;
-  }
+  .nav {
+    display: flex;
+   flex-direction: row;
+    margin-left: 0em;
+    padding: 0em;
+   }
+
+   .nav a {
+     background-color: transparent;
+   }
+
+   .self-image {
+     display: inline-block;
+   }
+  
+   
+  
+    /* PORTFOLIO STYLING */
+    .portfolio-wrapper {
+      display: block;
+    }
+  
+    .portfolio-wrapper div {
+      display: inline-block;
+      width: 30%;
+      padding: 1.4%;
+    }
+}
+
