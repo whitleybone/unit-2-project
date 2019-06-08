@@ -94,11 +94,6 @@ ul {
 /* =========================
   PORTFOLIO STYLING
   =========================== */
-
-  #portfolio {
-    background-color: #E0F0FA;
-  }
-  
 .portfolio-wrapper {
   display: flex;
   flex-direction: column;
@@ -117,6 +112,10 @@ ul {
   width: 100%;
 }
 
+#portfolio {
+  background-color: #bee5ff;
+}
+
 /* =========================
   EXPERIENCE STYLING
   =========================== */
@@ -126,7 +125,6 @@ ul {
     align-items: center;
     background-color: #E0F0FA ;
     margin-top: 2em;
-    
   }
   .exp-wrapper h2{
     text-align: center;
@@ -138,6 +136,10 @@ ul {
   
   .exp-wrapper img {
     width: 100%;
+  }
+
+  #experience {
+    background-color: #bee5ff;
   }
 
 /* =========================
@@ -254,7 +256,7 @@ footer, #contact {
       flex-direction: row;
       flex-wrap: wrap;
       align-items: baseline;
-   }
+    }
   
     .portfolio-wrapper div {
       display: inline-block;
@@ -268,8 +270,10 @@ footer, #contact {
 
        /* EXPERIENCE STYLING */
        .exp-wrapper {
-        display: block;
-      }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
     
       .exp-wrapper div {
         display: inline-block;
