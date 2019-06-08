@@ -123,7 +123,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E0F0FA ;
     margin-top: 2em;
   }
   .exp-wrapper h2{
@@ -220,6 +219,7 @@ footer, #contact {
   .nav {
     display: flex;
    flex-direction: row;
+   justify-content: center;
     align-items: center;
     margin-left: 0em;
     padding: 0em;
@@ -274,7 +274,7 @@ footer, #contact {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-    
+       }
       .exp-wrapper div {
         display: inline-block;
         width: 46.5%;
@@ -359,7 +359,6 @@ footer, #contact {
    justify-content: space-around;
    margin-left: 20%;
    padding-top: 1em;
-    
    }
 
    .nav a {
