@@ -20,6 +20,11 @@ p {
   text-align: center;
 }
 
+.intro p {
+  margin: 0;
+  padding: 1em;
+}
+
 
 
 /* ==========================
@@ -28,7 +33,10 @@ p {
 
 header {
   background: #F8F8F8;
-  margin: 0;
+}
+
+h1 {
+  text-align: center;
 }
 
 header p {
@@ -39,42 +47,24 @@ ul {
   list-style-type: none;
 }
 
-li {
-  width: 100%;
-  
-}
-
-.main-nav {
-  width: 100%;
-  
-}
-
-
-
 .self-photo {
  border: transparent;
  border-radius: 50%;
 }
 
-.main-nav a {
-  display: block;
+.main-nav a   {
+  display: inline-block;
   text-align: center;
-  padding: .5em;
-  font-size: 1.125em;
   background-color: white;
+  width: 100%;
   margin: .2em;
+  padding: .2em;
 }
 
-
-
-.main-header,
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 0em;
-  padding: 0em;
+.main-nav li {
+  width: 100%;
 }
+
 
 .main-header img {
   align-self: center;
@@ -110,6 +100,29 @@ li {
 .portfolio-wrapper img {
   width: 100%;
 }
+
+/* =========================
+  EXPERIENCE STYLING
+  =========================== */
+  .exp-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0F0FA ;
+    margin-top: 2em;
+    
+  }
+  .exp-wrapper h2{
+    text-align: center;
+    PADDING-TOP: 1em;
+  }
+  .exp-wrapper h3 {
+    text-align: center;
+  }
+  
+  .exp-wrapper img {
+    width: 100%;
+  }
 
 /* =========================
  CONTACT STYLING
@@ -196,17 +209,17 @@ footer, #contact {
   INTRO STYLING
   =========================== */
   .intro{
-    padding: 2em; 
+    padding: 1em; 
   }
 
   .intro P{
     text-align: justify;
-    padding-right: 15.5em;
+    padding-right: 12em;
   }
 
   .self-photo{
     float: right;
-    width: 35%;
+    width: 25%;
     height: auto;
     margin-right: 0em;
   }
@@ -271,6 +284,7 @@ footer, #contact {
   header {
     margin: 0;
   }
+
   h1 {
     text-align: left;
     font-size: 2.5em;
@@ -292,7 +306,6 @@ footer, #contact {
   .name-nav h1 {
     display: flex;
     flex-direction: row;
-    justify-content: 
   }
 
   .nav {
@@ -324,7 +337,7 @@ footer, #contact {
 
   .self-photo{
     float: right;
-    width: 40%;
+    width: 30%;
     height: auto;
   }
    
