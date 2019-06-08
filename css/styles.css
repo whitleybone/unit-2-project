@@ -1,7 +1,9 @@
 /* ==========================
   BASE STYLING
   ========================== */
-body{
+
+
+  body{
   font-family: 'Montserrat', sans-serif;
   background: white; 
 }
@@ -52,17 +54,24 @@ ul {
  border-radius: 50%;
 }
 
+.main-nav {
+  padding: 0 1em;
+}
+
+
 .main-nav a   {
   display: inline-block;
   text-align: center;
   background-color: white;
   width: 100%;
-  margin: .2em;
+  margin: .2em 0;
   padding: .2em;
 }
 
-.main-nav li {
-  width: 100%;
+
+
+.main-nav ul {
+  padding: 0;
 }
 
 
@@ -77,17 +86,24 @@ ul {
   width: 50%;
 }
 
+.name-nav {
+  overflow: auto;
+}
+
 
 /* =========================
   PORTFOLIO STYLING
   =========================== */
+
+  #portfolio {
+    background-color: #E0F0FA;
+  }
+  
 .portfolio-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E0F0FA ;
   margin: 0;
-  
 }
 .portfolio-wrapper h2{
   text-align: center;
@@ -170,6 +186,12 @@ footer, #contact {
   display: none;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 
 
@@ -199,12 +221,12 @@ footer, #contact {
     align-items: center;
     margin-left: 0em;
     padding: 0em;
+    
    }
 
    .nav a {
      background-color: transparent;
    }
-  
 /* =========================
   INTRO STYLING
   =========================== */
@@ -226,9 +248,13 @@ footer, #contact {
 
   
     /* PORTFOLIO STYLING */
+
     .portfolio-wrapper {
-      display: block;
-    }
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+   }
   
     .portfolio-wrapper div {
       display: inline-block;
@@ -239,6 +265,17 @@ footer, #contact {
     .photo-gallery p {
       font-size: 17.49px;
     }
+
+       /* EXPERIENCE STYLING */
+       .exp-wrapper {
+        display: block;
+      }
+    
+      .exp-wrapper div {
+        display: inline-block;
+        width: 46.5%;
+        padding: 1.5%;
+      }
 
     /* CONTACT STYLING */
 
@@ -304,8 +341,12 @@ footer, #contact {
   }
 
   .name-nav h1 {
-    display: flex;
-    flex-direction: row;
+    margin-left: .1em;
+  }
+
+  .name-nav nav {
+      margin-top: 1em;
+      margin-right: 1em;
   }
 
   .nav {
@@ -343,9 +384,7 @@ footer, #contact {
    
   
     /* PORTFOLIO STYLING */
-    .portfolio-wrapper {
-      display: block;
-    }
+   
 
     #portfolio {
       margin-top: 0;
@@ -357,9 +396,7 @@ footer, #contact {
       padding: 1.4%;
     }
 
-    .photo-gallery p {
-      font-size: 16px;
-    }
+    
 
     /* PORTFOLIO STYLING */
 
